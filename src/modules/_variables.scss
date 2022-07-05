@@ -5,17 +5,17 @@ body {
   --keypad_background: hsl(223, 31%, 20%);
   --screen_background: hsl(224, 36%, 15%);
   // #### Keys
-  --key_background: hsl(225, 21%, 49%);
-  --key_shadow: hsl(224, 28%, 35%);
-  --key_background: hsl(6, 63%, 50%);
+  --key_background2: hsl(225, 21%, 49%);
+  --key_shadow2: hsl(224, 28%, 35%);
+  --key_background3: hsl(6, 63%, 50%);
   --key_toggle: hsl(6, 63%, 50%);
-  --key_shadow: hsl(6, 70%, 34%);
+  --key_shadow3: hsl(6, 70%, 34%);
   --key_background: hsl(30, 25%, 89%);
   --key_shadow: hsl(28, 16%, 65%);
   // #### Text
-  --text: hsl(221, 14%, 31%);
+  --key_text: hsl(221, 14%, 31%);
   --White: hsl(0, 0%, 100%);
-  
+  --display_text: hsl(0, 0%, 100%);
 }
 body.theme-2 {
   // ### Theme 2
@@ -24,17 +24,17 @@ body.theme-2 {
   --keypad_background: hsl(0, 5%, 81%);
   --screen_background: hsl(0, 0%, 93%);
   // #### Keys
-  --key_background: hsl(185, 42%, 37%);
-  --key_shadow: hsl(185, 58%, 25%);
-  --key_background: hsl(25, 98%, 40%);
+  --key_background2: hsl(185, 42%, 37%);
+  --key_shadow2: hsl(185, 58%, 25%);
+  --key_background3: hsl(25, 98%, 40%);
   --key_toggle: hsl(25, 98%, 40%);
-  --key_shadow: hsl(25, 99%, 27%);
+  --key_shadow3: hsl(25, 99%, 27%);
   --key_background: hsl(45, 7%, 89%);
   --key_shadow: hsl(35, 11%, 61%);
   // #### Text
-  --text: hsl(60, 10%, 19%);
+  --key_text: hsl(60, 10%, 19%);
   --White: hsl(0, 0%, 100%);
-
+  --display_text: hsl(60, 10%, 19%);
 }
 body.theme-3{
   // ### Theme 3
@@ -43,16 +43,17 @@ body.theme-3{
   --keypad_background: hsl(268, 71%, 12%);
   --screen_background: hsl(268, 71%, 12%);
   // #### Keys
-  --key_background: hsl(281, 89%, 26%);
-  --key_shadow: hsl(285, 91%, 52%);
-  --key_background: hsl(176, 100%, 44%);
+  --key_background2: hsl(281, 89%, 26%);
+  --key_shadow2: hsl(285, 91%, 52%);
+  --key_background3: hsl(176, 100%, 44%);
   --key_toggle: hsl(176, 100%, 44%);
-  --key_shadow: hsl(177, 92%, 70%);
+  --key_shadow3: hsl(177, 92%, 70%);
   --key_background: hsl(268, 47%, 21%);
   --key_shadow: hsl(290, 70%, 36%);
   // #### Text
   --text: hsl(198, 20%, 13%);
-  --yellow_text: hsl(52, 100%, 62%);
-  --White: hsl(0, 0, 100%);
-  
+  --key_text: hsl(52, 100%, 62%);
+  --White: hsl(0, 0%, 100%);
+  --display_text: hsl(52, 100%, 62%);
+
 }

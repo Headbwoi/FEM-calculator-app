@@ -1,7 +1,9 @@
 
 html{
-    font-size: 100%;
     box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Spartan', 'sans-serif';
+    font-weight: 700;
 }
 *,*::after,*::before{
     box-sizing: inherit;
@@ -10,8 +12,14 @@ html{
 }
 
 @import "modules/variables";
+@import "modules/mixins";
 @import "modules/main";
 
+@font-face {
+    font-family: Spartan;
+    src: url(/LeagueSpartan-Bold.ttf);
+}
+//import spartan font
 
 // .attribution { font-size: 11px; text-align: center; }
 //     .attribution a { color: hsl(228, 45%, 44%); }

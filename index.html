@@ -8,9 +8,72 @@
   
   <title>Frontend Mentor | Calculator app</title>
   <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js" defer></script>
 </head>
-<body class="">
+<body class="theme-1">
+
   <main>
+
+    <div class="calculator">
+      <header class="header">
+        <div class="heading">
+          <h1>Calc</h1>
+        </div>
+        <!-- toggle -->
+        <div class="theme-container">
+          <h2>THEME</h2>
+          <div class="block">
+          <div class="theme-indicators">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+          <div class="theme-toggle-buttons">
+            <div class="theme-toggle-buttons-1 btn" id="theme-1">
+              <input type="radio" name="toggle" id="one" value="1">
+              <label for="one"></label>
+            </div>
+            <div class="theme-toggle-buttons-2 btn" id="theme-2">
+              <input type="radio" name="toggle" id="two" value="1">
+              <label for="two"></label>
+            </div>
+            <div class="theme-toggle-buttons-3 btn" id="theme-3">
+              <input type="radio" name="toggle" id="three" value="1">
+              <label for="three"></label>
+            </div>
+          </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- screen -->
+      <div class="screen">
+        <p class="previous" data-previous>12</p>
+        <p class="current" data-current>323323</p>
+      </div>
+
+      <!-- keypad -->
+      <div class="keypad">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="blue">DEL</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>+</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+        <button>.</button>
+        <button>0</button>
+        <button>/</button>
+        <button>x</button>
+        <button class="span-two blue">RESET</button>
+        <button class="span-two equals">=</button>
+      </div>
+    </div>
     
   </main>
 

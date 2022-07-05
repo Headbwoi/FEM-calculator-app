@@ -1,2 +1,176 @@
+body {
+  background-color: var(--main_background);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 
+  .calculator {
+    height: 41.75rem;
+    width: 100%;
+    padding: 1.75rem 1.5rem;
 
+    @include medium {
+      height: 44.375rem;
+      max-width: 34.0625rem;
+      width: 100%;
+      padding: 0px 0px;
+      margin-top: 110px;
+      margin-bottom: 94px;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.875rem;
+      .heading {
+        h1 {
+          color: var(--display_text);
+          font-size: 2rem;
+          letter-spacing: 2px;
+        }
+      }
+      .theme-container {
+        display: flex;
+        justify-content: start;
+        align-items: flex-end;
+        h2{
+            font-size: 1rem;
+            color: var(--display_text);
+            letter-spacing: 2px;
+            margin-right: 1.375rem;
+        }
+        .theme-indicators{
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: .3rem;
+          span{
+            color: var(--display_text);
+          font-size: 1rem;
+          }
+
+        }
+        .theme-toggle-buttons{
+          background-color: var(--toggle_background);
+          width: 4.875rem;
+          height: 1.75rem;
+          border-radius: 1rem;
+          position: relative;
+
+          &-1,&-2,&-3{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            border-radius: 50%;
+
+            input{
+              display: none;
+              appearance: none;
+              visibility: hidden;
+            }
+            input[type="radio"]:checked ~ label{
+              background-color: var(--key_toggle);
+            }
+            label{
+              width: 1rem;
+              height: 1rem;
+              // background: var(--key_toggle);
+              border-radius: 50%;
+            }
+          }
+          &-1{
+            left: 10%;
+          }
+          &-2{
+            left: 40%;
+          }
+          &-3{
+            right: 10%;
+          }
+        }
+      }
+    }
+
+    .screen{
+      background-color: var(--screen_background);
+      height: 5.625rem;
+      width: 100%;
+      border-radius: .5rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      flex-direction: column;
+      word-wrap: break-word;
+      word-break: break-all;
+      padding: 1rem 1.625rem;
+      margin-bottom: 1.5rem;
+
+      p{
+        font-size: 2rem;
+        color: var(--display_text);
+      }
+      .previous{
+        font-size: 1.2rem;
+      }
+    }
+
+    .keypad{
+      background-color: var(--keypad_background);
+      padding: 1.5rem;
+      border-radius: .5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 0.875rem;
+
+      @include medium{
+        padding: 1.75rem;
+        gap: 1.5rem;
+      }
+
+      button{
+        width: 3.75rem;
+        height: 3.75rem;
+        background-color: var(--key_background);
+        border: none;
+        border-radius: .3rem;
+        border-bottom: 4px solid var(--key_shadow);
+        font-size: 2rem;
+        color: var(--key_text);
+        font-weight: 700;
+        transition: 200ms ease-in-out;
+
+        @include medium{
+          width: 6.375rem;
+          border-radius: .6rem;
+        }
+        
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      .span-two{
+        grid-column: span 2;
+        width: 100%;
+      }
+      .blue{
+        font-size: 1.2rem;
+        background-color: var(--key_background2);
+        border-color: var(--key_shadow2);
+        color: var(--White);
+      }
+      .equals{
+        background-color: var(--key_background3);
+        border-color: var(--key_shadow3);
+        color: var(--White);
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+//- Font size (numbers): 32px
