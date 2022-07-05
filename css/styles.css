@@ -181,10 +181,6 @@ main .calculator .header .theme-container .theme-toggle-buttons-1 input, main .c
   visibility: hidden;
 }
 
-main .calculator .header .theme-container .theme-toggle-buttons-1 input[type="radio"]:checked ~ label, main .calculator .header .theme-container .theme-toggle-buttons-2 input[type="radio"]:checked ~ label, main .calculator .header .theme-container .theme-toggle-buttons-3 input[type="radio"]:checked ~ label {
-  background-color: var(--key_toggle);
-}
-
 main .calculator .header .theme-container .theme-toggle-buttons-1 label, main .calculator .header .theme-container .theme-toggle-buttons-2 label, main .calculator .header .theme-container .theme-toggle-buttons-3 label {
   width: 1rem;
   height: 1rem;
@@ -299,6 +295,18 @@ main .calculator .keypad .equals {
   border-color: var(--key_shadow3);
   color: var(--White);
   font-size: 1.2rem;
+}
+
+.active-1 {
+  background-color: #d03f2f;
+}
+
+.active-2 {
+  background-color: #ca5502;
+}
+
+.active-3 {
+  background-color: #00e0d1;
 }
 
 @font-face {
