@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 100%;
-  font-family: 'Spartan', 'sans-serif';
+  font-family: 'League Spartan', sans-serif;
   font-weight: 700;
 }
 
@@ -94,8 +95,6 @@ main .calculator {
     max-width: 34.0625rem;
     width: 100%;
     padding: 0px 0px;
-    margin-top: 110px;
-    margin-bottom: 94px;
   }
 }
 
@@ -146,7 +145,7 @@ main .calculator .header .theme-container .theme-indicators {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
 }
 
 main .calculator .header .theme-container .theme-indicators span {
@@ -203,7 +202,7 @@ main .calculator .screen {
   background-color: var(--screen_background);
   height: 5.625rem;
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,7 +234,7 @@ main .calculator .screen .previous {
 main .calculator .keypad {
   background-color: var(--keypad_background);
   padding: 1.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -257,7 +256,7 @@ main .calculator .keypad button {
   height: 3.75rem;
   background-color: var(--key_background);
   border: none;
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   border-bottom: 4px solid var(--key_shadow);
   font-size: 2rem;
   color: var(--key_text);
@@ -269,7 +268,7 @@ main .calculator .keypad button {
 @media (min-width: 48rem) {
   main .calculator .keypad button {
     width: 6.375rem;
-    border-radius: .6rem;
+    border-radius: 0.6rem;
   }
 }
 
@@ -307,10 +306,5 @@ main .calculator .keypad .equals {
 
 .active-3 {
   background-color: #00e0d1;
-}
-
-@font-face {
-  font-family: Spartan;
-  src: url(/LeagueSpartan-Bold.ttf);
 }
 /*# sourceMappingURL=styles.css.map */
