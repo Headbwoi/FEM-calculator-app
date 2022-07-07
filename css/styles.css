@@ -14,7 +14,7 @@ html {
   padding: 0;
 }
 
-body {
+body.theme-1 {
   --main_background: hsl(222, 26%, 31%);
   --toggle_background: hsl(223, 31%, 20%);
   --keypad_background: hsl(223, 31%, 20%);
