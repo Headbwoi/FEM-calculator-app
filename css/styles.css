@@ -2,7 +2,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 100%;
+  font-size: 16px;
   font-family: 'League Spartan', sans-serif;
   font-weight: 700;
 }
@@ -95,6 +95,8 @@ main .calculator {
     max-width: 34.0625rem;
     width: 100%;
     padding: 0px 0px;
+    margin-top: 110px;
+    margin-bottom: 94px;
   }
 }
 
@@ -227,6 +229,12 @@ main .calculator .screen p {
   color: var(--display_text);
 }
 
+@media (min-width: 48rem) {
+  main .calculator .screen p {
+    font-size: 2.8125rem;
+  }
+}
+
 main .calculator .screen .previous {
   font-size: 1.2rem;
 }
@@ -239,8 +247,8 @@ main .calculator .keypad {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-rows: (3.75rem)[5];
+      grid-template-rows: repeat(5, 3.75rem);
   gap: 0.875rem;
 }
 
@@ -252,8 +260,6 @@ main .calculator .keypad {
 }
 
 main .calculator .keypad button {
-  width: 3.75rem;
-  height: 3.75rem;
   background-color: var(--key_background);
   border: none;
   border-radius: 0.3rem;
