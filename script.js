@@ -6,9 +6,13 @@ const themeTwo = document.querySelector("#theme-2")
 const themeThree = document.querySelector("#theme-3")
 
 d.addEventListener("DOMContentLoaded", () => {
-    if(localStorage.getItem("theme") === null){
-        setThemeOne()
-    }else if(JSON.parse(localStorage.getItem("theme")) === "theme-1"){
+
+    if(window.matchMedia("(prefers-color-scheme: dark)").matches){
+      setThemeOne()
+    }else {
+      setThemeTwo()
+    }
+    if(JSON.parse(localStorage.getItem("theme")) === "theme-1"){
       setThemeOne()
     }else if(JSON.parse(localStorage.getItem("theme")) === "theme-2"){
       setThemeTwo()
