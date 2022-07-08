@@ -49,6 +49,7 @@ Users should be able to:
 ```js
 import { setThemeOne, setThemeTwo, setThemeThree } from "./theme.js";
 ```
+
 I learned how to use ES6 import module
 
 ## Author
