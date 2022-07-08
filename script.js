@@ -8,12 +8,32 @@ const themeThree = document.querySelector("#theme-3")
 d.addEventListener("DOMContentLoaded", () => {
     if(localStorage.getItem("theme") === null){
         setThemeOne()
+    }else if(JSON.parse(localStorage.getItem("theme")) === "theme-1"){
+      setThemeOne()
+    }else if(JSON.parse(localStorage.getItem("theme")) === "theme-2"){
+      setThemeTwo()
+    }else if(JSON.parse(localStorage.getItem("theme")) === "theme-3"){
+      setThemeThree()
     }
 })
 
-themeOne.addEventListener("click", setThemeOne)
-themeTwo.addEventListener("click", setThemeTwo)
-themeThree.addEventListener("click", setThemeThree)
+
+
+themeOne.addEventListener("click", () => {
+  setThemeOne()
+  localStorage.setItem("theme", JSON.stringify("theme-1"))
+})
+
+themeTwo.addEventListener("click", () => {
+  setThemeTwo()
+  localStorage.setItem("theme", JSON.stringify("theme-2"))
+
+})
+themeThree.addEventListener("click", () => {
+  setThemeThree()
+  localStorage.setItem("theme", JSON.stringify("theme-3"))
+
+})
 
 class Calculator {
   constructor(previousOperandText, currentOperandText) {
