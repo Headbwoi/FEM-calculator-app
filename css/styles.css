@@ -160,6 +160,7 @@ main .calculator .header .theme-container .theme-toggle-buttons {
   height: 1.75rem;
   border-radius: 1rem;
   position: relative;
+  cursor: pointer;
 }
 
 main .calculator .header .theme-container .theme-toggle-buttons-1, main .calculator .header .theme-container .theme-toggle-buttons-2, main .calculator .header .theme-container .theme-toggle-buttons-3 {
@@ -171,6 +172,7 @@ main .calculator .header .theme-container .theme-toggle-buttons-1, main .calcula
   display: -ms-flexbox;
   display: flex;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 main .calculator .header .theme-container .theme-toggle-buttons-1 input, main .calculator .header .theme-container .theme-toggle-buttons-2 input, main .calculator .header .theme-container .theme-toggle-buttons-3 input {
@@ -179,12 +181,14 @@ main .calculator .header .theme-container .theme-toggle-buttons-1 input, main .c
      -moz-appearance: none;
           appearance: none;
   visibility: hidden;
+  cursor: pointer;
 }
 
 main .calculator .header .theme-container .theme-toggle-buttons-1 label, main .calculator .header .theme-container .theme-toggle-buttons-2 label, main .calculator .header .theme-container .theme-toggle-buttons-3 label {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 main .calculator .header .theme-container .theme-toggle-buttons-1 {

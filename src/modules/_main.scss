@@ -58,6 +58,7 @@ main {
           height: 1.75rem;
           border-radius: 1rem;
           position: relative;
+          cursor: pointer;
 
           &-1,
           &-2,
@@ -67,17 +68,20 @@ main {
             transform: translateY(-50%);
             display: flex;
             border-radius: 50%;
+            cursor: pointer;
 
             input {
               display: none;
               appearance: none;
               visibility: hidden;
+              cursor: pointer;
             }
 
             label {
               width: 1rem;
               height: 1rem;
               border-radius: 50%;
+              cursor: pointer;
             }
           }
           &-1 {
