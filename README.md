@@ -42,7 +42,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - SCSS
--Vanilla javaScript
+- Vanilla javaScript
 
 ### What I learned
 
@@ -54,5 +54,5 @@ I learned how to use ES6 import module
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Headbwoi)
-- Twitter - [@yourusername](https://www.twitter.com/headbwoi_1)
+- Frontend Mentor - [@headbwoi](https://www.frontendmentor.io/profile/Headbwoi)
+- Twitter - [@headbwoi](https://www.twitter.com/headbwoi_1)
